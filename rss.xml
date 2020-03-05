@@ -594,7 +594,7 @@ focused on portability and low-end platforms support.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;miniquad and related crates set up yearly goals:
 &lt;a href=&quot;https:&#x2F;&#x2F;patreon.com&#x2F;posts&#x2F;34230612&quot;&gt;&amp;quot;Rust 2D Engine 2020 Roadmap&amp;quot;&lt;&#x2F;a&gt;;&lt;&#x2F;li&gt;
-&lt;li&gt;A first try on the higher-level engine design was tried: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;not-fl3&#x2F;macroquad&#x2F;blob&#x2F;126773535&#x2F;examples&#x2F;flappy_bird.rs&quot;&gt;flappy bird.rs&lt;&#x2F;a&gt;;&lt;&#x2F;li&gt;
+&lt;li&gt;A first try on the higher-level engine design: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;not-fl3&#x2F;macroquad&#x2F;blob&#x2F;126773535&#x2F;examples&#x2F;flappy_bird.rs&quot;&gt;flappy bird.rs&lt;&#x2F;a&gt;;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;fedor_games&#x2F;status&#x2F;1223602773532520448&quot;&gt;miniquad was successfully built for Android&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;luminance-v0-39&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;fbe3l0&#x2F;luminance039&quot;&gt;luminance v0.39&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#luminance-v0-39&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;

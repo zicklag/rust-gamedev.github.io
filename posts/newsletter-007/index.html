@@ -71,6 +71,7 @@ Rust is a systems l…">
 
         <div class="post-content e-content" itemprop="articleBody">
             <!-- markdownlint-disable no-trailing-punctuation -->
+<!-- markdownlint-enable line-length -->
 <p>Welcome to the seventh issue of the Rust GameDev Workgroup’s
 monthly newsletter.</p>
 <p><a href="https://rust-lang.org">Rust</a> is a systems language pursuing the trifecta:
@@ -120,17 +121,23 @@ This trove of valuable feedback will inform the WG's roadmap for 2020.</p>
 <a href="https://reddit.com/r/rust_gamedev/comments/ezrk5o/rust_game_development_ecosystem_survey">/r/rust_gamedev</a></em></p>
 <h2 id="are-we-game-yet-updates"><a href="https://arewegameyet.com/">Are We Game Yet?</a> Updates&nbsp;<a class="anchor" href="#are-we-game-yet-updates" aria-hidden="true">#</a>
 </h2>
-<p><a href="https://arewegameyet.com/">Are We Game Yet?</a> is a website cataloguing the Rust gamedev ecosystem, with hundreds of links to crates, games and helpful resources.</p>
+<p><a href="https://arewegameyet.com/">Are We Game Yet?</a> is a website cataloguing the Rust gamedev ecosystem,
+with hundreds of links to crates, games and helpful resources.</p>
 <p><a href="https://arewegameyet.com/"><img src="https://rust-gamedev.github.io/posts/newsletter-007/awgy.png" alt="Are We Game Yet? homepage" /></a></p>
 <p>This month, it received some major updates:</p>
 <ul>
-<li>All of the site's data files have been unified into a consistent TOML schema, making it easier to add new links.</li>
-<li>Categories have been added for games and resources, and you can now add an item to multiple categories without duplicating the data.</li>
+<li>All of the site's data files have been unified into a consistent TOML schema,
+making it easier to add new links.</li>
+<li>Categories have been added for games and resources, and you can now
+add an item to multiple categories without duplicating the data.</li>
 <li>Page load times have been reduced (especially on the homepage).</li>
-<li>The styling has been improved to make the site look better on mobile, and to resolve some accessibility issues.</li>
+<li>The styling has been improved to make the site look better on mobile,
+and to resolve some accessibility issues.</li>
 </ul>
-<p><a href="https://github.com/rust-gamedev/arewegameyet/issues/210">Ownership was also recently transferred across to the gamedev working group</a>, to allow for more people to help with maintainance.</p>
-<p>There's never been a better time to add your projects to the site, so <a href="https://github.com/rust-gamedev/arewegameyet#contribute">please come and contribute</a>!</p>
+<p><a href="https://github.com/rust-gamedev/arewegameyet/issues/210">Ownership was also recently transferred across to the gamedev working group</a>,
+to allow for more people to help with maintainance.</p>
+<p>There's never been a better time to add your projects to the site,
+so <a href="https://github.com/rust-gamedev/arewegameyet#contribute">please come and contribute</a>!</p>
 <h2 id="new-rust-gamedev-discord-server"><a href="https://discord.gg/yNtPTb2">New Rust GameDev Discord Server</a>&nbsp;<a class="anchor" href="#new-rust-gamedev-discord-server" aria-hidden="true">#</a>
 </h2>
 <p><a href="https://discord.gg/yNtPTb2"><img src="https://rust-gamedev.github.io/posts/newsletter-007/discord-invite.png" alt="Invitation widget: 243 members total, 98 online" /></a></p>
@@ -158,7 +165,8 @@ Rust Hack'n'Learn meetup in Tallinn on March 13.</p>
 <h3 id="rusty-shooter"><a href="https://github.com/mrDIMAS/rusty-shooter">Rusty Shooter</a>&nbsp;<a class="anchor" href="#rusty-shooter" aria-hidden="true">#</a>
 </h3>
 <p><img src="https://rust-gamedev.github.io/posts/newsletter-007/rusty-shooter-in-game.jpg" alt="Rusty Shooter in-game screenshot" /></p>
-<p><a href="https://github.com/mrDIMAS/rusty-shooter">Rusty Shooter</a> is a Quake3-like first-person shooter written in Rust using <a href="https://github.com/mrDIMAS/rg3d">rg3d engine</a>.</p>
+<p><a href="https://github.com/mrDIMAS/rusty-shooter">Rusty Shooter</a> is a Quake3-like first-person shooter
+written in Rust using <a href="https://github.com/mrDIMAS/rg3d">rg3d engine</a>.</p>
 <p>Features:</p>
 <ul>
 <li>Common FPS elements: bots, items, weapons;</li>
@@ -186,9 +194,17 @@ an ant colony sandbox game with ASCII graphics.</p>
 </h3>
 <p><img src="https://rust-gamedev.github.io/posts/newsletter-007/veloren1.png" alt="Rolling mountain landscape" /></p>
 <p>^ <em>Rolling mountain landscape</em></p>
-<p><a href="https://veloren.net">Veloren</a> is an open world, open-source voxel RPG inspired by Dwarf Fortress and Cube World.</p>
-<p>At the beginning of the month, the team met for a 0.6 intro meeting. It was decided that 0.6 would focus on things for the player to do, and hence will be called &quot;The Content Update&quot;.</p>
-<p>Research has been done on multiple areas this month. One domain is level of detail, which is allowing mountains off in the distance to be rendered much faster. Another domain is server persistence. Finding a way for the server to efficiently persist player information is a large part of what is needed for The Content Update.</p>
+<p><a href="https://veloren.net">Veloren</a> is an open world, open-source voxel RPG
+inspired by Dwarf Fortress and Cube World.</p>
+<p>At the beginning of the month, the team met for a 0.6 intro meeting.
+It was decided that 0.6 would focus on things for the player to do,
+and hence will be called &quot;The Content Update&quot;.</p>
+<p>Research has been done on multiple areas this month.
+One domain is level of detail, which is allowing mountains off in the distance
+to be rendered much faster.
+Another domain is server persistence.
+Finding a way for the server to efficiently persist player information
+is a large part of what is needed for The Content Update.</p>
 <p>Here is the February changelog:</p>
 <pre style="background-color:#2b303b;">
 <span style="color:#c0c5ce;">- Fixed NPCs attacking the player forever after killing them
@@ -219,7 +235,10 @@ an ant colony sandbox game with ASCII graphics.</p>
 <li><a href="https://veloren.net/devblog-56#persistence-by-angelonfira">Persistence</a></li>
 </ul>
 <p><img src="https://rust-gamedev.github.io/posts/newsletter-007/veloren2.png" alt="Hanging out" /></p>
-<p>In March, there will be a heavy focus on completing level of detail work as well as persistence. Modding support will be explored further. Player achievements will be merged into the game, and we will start looking at where more content can be added.</p>
+<p>In March, there will be a heavy focus on completing level of detail work
+as well as persistence. Modding support will be explored further.
+Player achievements will be merged into the game,
+and we will start looking at where more content can be added.</p>
 <p>February's full weekly devlogs: &quot;This Week In Veloren...&quot;:
 <a href="https://veloren.net/devblog-53">#53</a>,
 <a href="https://veloren.net/devblog-54">#54</a>,
@@ -289,9 +308,10 @@ and will have to be copied from the game on Steam.</p>
 <p><img src="https://rust-gamedev.github.io/posts/newsletter-007/everpuzzle-020-preview.gif" alt="Everpuzzle preview" /></p>
 <p><a href="https://github.com/Skytrias/everpuzzle">Everpuzzle</a> is a Tetris Attack like action-puzzle game written in Rust.</p>
 <p>Everpuzzle aims to become a similar game like Tetris Attack and expand on its concepts.
-The project was recently rewritten with minimal dependencies to achieve small compile times and gain more control over the
-underlying engine architecture.
-In the past Everpuzzle was using Amethyst with ECS, however there were some issues that made development difficult.
+The project was recently rewritten with minimal dependencies to achieve small
+compile times and gain more control over the underlying engine architecture.
+In the past Everpuzzle was using Amethyst with ECS,
+however there were some issues that made development difficult.
 Everpuzzle's big goals are AI, Multiplayer and different Game modes.</p>
 <p>Big changes coming in version 0.2, full list <a href="https://github.com/Skytrias/everpuzzle/blob/master/CHANGELOG.md">here</a>:</p>
 <ul>
@@ -307,8 +327,15 @@ Everpuzzle's big goals are AI, Multiplayer and different Game modes.</p>
 <h3 id="antorum"><a href="https://dooskington.com">Antorum</a>&nbsp;<a class="anchor" href="#antorum" aria-hidden="true">#</a>
 </h3>
 <p><img src="https://rust-gamedev.github.io/posts/newsletter-007/antorum.jpg" alt="Spider NPCs" /></p>
-<p><a href="https://dooskington.com">Antorum</a> is a multiplayer RPG where players build their characters and fight against the growing threats on the isle. The game server is authoritative and written in Rust, while the client is written in Unity/C#.</p>
-<p>This month, the focus was on cooking skill. This includes recipes and cookware. Players will need a cooking appliance, such as a stove or campfire to cook some Chonkrat Stew inside a pot. A heavy refactor to the interaction system had to be made, as well as changes to networking.</p>
+<p><a href="https://dooskington.com">Antorum</a> is a multiplayer RPG where players build their characters
+and fight against the growing threats on the isle.
+The game server is authoritative and written in Rust,
+while the client is written in Unity/C#.</p>
+<p>This month, the focus was on cooking skill. This includes recipes and cookware.
+Players will need a cooking appliance, such as a stove or campfire
+to cook some Chonkrat Stew inside a pot.
+A heavy refactor to the interaction system had to be made,
+as well as changes to networking.</p>
 <p>Check out te full devlog: <a href="https://dooskington.com/dev-log/18">#18 &quot;Cooking&quot;</a>.</p>
 <h3 id="scale"><a href="https://github.com/Uriopass/Scale">Scale</a>&nbsp;<a class="anchor" href="#scale" aria-hidden="true">#</a>
 </h3>
@@ -345,8 +372,14 @@ relation to Ultimate Scale.</p>
 <h3 id="tennis-academy-dash"><a href="https://iolivia.itch.io/tennis-academy-dash">Tennis Academy Dash</a>&nbsp;<a class="anchor" href="#tennis-academy-dash" aria-hidden="true">#</a>
 </h3>
 <p><img src="https://rust-gamedev.github.io/posts/newsletter-007/dash.gif" alt="release" /></p>
-<p>Tennis academy dash is a time management game where you are the manager of a tennis academy and you need to coordinate various players to play on your courts.</p>
-<p>The game is still a work in progress, but the demo version has been uploaded to itch.io this month, so you can go ahead and check it out! Give it a go (the build is only for mac at the moment but other platforms coming soon) and drop a comment with any feedback on <a href="https://iolivia.itch.io/tennis-academy-dash">tennis-academy-dash</a>.</p>
+<p>Tennis academy dash is a time management game where you are the manager
+of a tennis academy and you need to coordinate various players
+to play on your courts.</p>
+<p>The game is still a work in progress, but the demo version
+has been uploaded to itch.io this month, so you can go ahead and check it out!
+Give it a go
+(the build is only for mac at the moment but other platforms coming soon)
+and drop a comment with any feedback on <a href="https://iolivia.itch.io/tennis-academy-dash">tennis-academy-dash</a>.</p>
 <h3 id="dwarf-world"><a href="https://dwarf.world">Dwarf World</a>&nbsp;<a class="anchor" href="#dwarf-world" aria-hidden="true">#</a>
 </h3>
 <p><a href="https://dwarf.world"><img src="https://rust-gamedev.github.io/posts/newsletter-007/dwarf-world.png" alt="New site with links to Twitter, Discord, and Twich" /></a></p>
@@ -360,20 +393,29 @@ every Sunday at 19:30 PM GMT <a href="https://twitch.tv/nomad_pixel">on Twitch</
 <blockquote>
 <p><em>Space is a lonely place, but at least you've got the music to keep you company.</em></p>
 </blockquote>
-<p><a href="https://17cupsofcoffee.itch.io/lonely-star">Lonely Star</a> is a side-scrolling infinite runner, with simple generative music. You collect orbs and fly through rings in order to play notes and stay alive.</p>
-<p>It was developed by <a href="https://twitter.com/17cupsofcoffee">17cupsofcoffee</a>, using the <a href="https://github.com/17cupsofcoffee/tetra">Tetra</a> 2D game framework, for <a href="https://rust-gamedev.github.io/posts/newsletter-007/weekly-game-jam-135">Weekly Game Jam #135</a>.</p>
+<p><a href="https://17cupsofcoffee.itch.io/lonely-star">Lonely Star</a> is a side-scrolling infinite runner,
+with simple generative music.
+You collect orbs and fly through rings in order to play notes and stay alive.</p>
+<p>It was developed by <a href="https://twitter.com/17cupsofcoffee">17cupsofcoffee</a>,
+using the <a href="https://github.com/17cupsofcoffee/tetra">Tetra</a> 2D game framework,
+for <a href="https://rust-gamedev.github.io/posts/newsletter-007/weekly-game-jam-135">Weekly Game Jam #135</a>.</p>
 <hr />
 <p>Tetra itself also received two small updates recently:</p>
 <ul>
-<li><a href="https://twitter.com/17cupsofcoffee/status/1217524602513055749">Version 0.3.2 was released</a>, with bugfixes and some tools for simple AABB collision detection.</li>
-<li><a href="https://twitter.com/17cupsofcoffee/status/1219758851416895489">The Pong tutorial was updated with a new chapter</a>, showing how to use Tetra's graphics and input APIs.</li>
+<li><a href="https://twitter.com/17cupsofcoffee/status/1217524602513055749">Version 0.3.2 was released</a>,
+with bugfixes and some tools for simple AABB collision detection.</li>
+<li><a href="https://twitter.com/17cupsofcoffee/status/1219758851416895489">The Pong tutorial was updated with a new chapter</a>,
+showing how to use Tetra's graphics and input APIs.</li>
 </ul>
 <h3 id="akigi"><a href="https://akigi.com">Akigi</a>&nbsp;<a class="anchor" href="#akigi" aria-hidden="true">#</a>
 </h3>
 <p><img src="https://rust-gamedev.github.io/posts/newsletter-007/akigi.png" alt="High detail terrain chunk with PRR" /></p>
-<p>^ <em>Sampling a heightmap in the vertex shader and also computing the normal, tangent and bitangent vectors in the vertex shader.</em></p>
+<p>^ <em>Sampling a heightmap in the vertex shader and also computing the normal,
+tangent and bitangent vectors in the vertex shader.</em></p>
 <p><a href="https://akigi.com">Akigi</a> is a multiplayer online world where most believe that humans are inferior.</p>
-<p>This month saw a heavy focus on the web client. An alpha release is slated for April 9th, 2020. Lots of client refactoring was done, and experiments were run in the browser.</p>
+<p>This month saw a heavy focus on the web client.
+An alpha release is slated for April 9th, 2020.
+Lots of client refactoring was done, and experiments were run in the browser.</p>
 <p>Some of February's updates:</p>
 <ul>
 <li><a href="https://devjournal.akigi.com/february-2020/2020-02-09.html#input-event-processor-system">Input Event Processor System</a>;</li>
@@ -396,8 +438,8 @@ network play</a>.</p>
 <h3 id="way-of-rhea-s-new-trailer"><a href="https://store.steampowered.com/app/1110620/Way_of_Rhea">Way of Rhea's New Trailer</a>&nbsp;<a class="anchor" href="#way-of-rhea-s-new-trailer" aria-hidden="true">#</a>
 </h3>
 <p><a href="https://store.steampowered.com/app/1110620/Way_of_Rhea"><img src="https://rust-gamedev.github.io/posts/newsletter-007/way-of-rhea.jpg" alt="logo" /></a></p>
-<p><a href="https://store.steampowered.com/app/1110620/Way_of_Rhea">Way of Rhea</a> is an upcoming puzzle platformer that takes place in a world
-where you can only interact with objects that match your current color.</p>
+<p><a href="https://store.steampowered.com/app/1110620/Way_of_Rhea">Way of Rhea</a> is an upcoming puzzle platformer that takes place
+in a world where you can only interact with objects that match your current color.</p>
 <p>This month, an updated trailer with new character art was released.
 <a href="https://store.steampowered.com/app/1110620/Way_of_Rhea">Check it out on the game's Steam page</a>.</p>
 <h3 id="noodle-cat">Noodle Cat&nbsp;<a class="anchor" href="#noodle-cat" aria-hidden="true">#</a>
@@ -427,8 +469,10 @@ Some of the updates:</p>
 <h3 id="grumpy-visitors-first-update-winter-progress"><a href="https://mvlabat.github.io/2020-03-02-winter-update/">Grumpy Visitors First Update. Winter Progress</a>&nbsp;<a class="anchor" href="#grumpy-visitors-first-update-winter-progress" aria-hidden="true">#</a>
 </h3>
 <p><img src="https://rust-gamedev.github.io/posts/newsletter-007/grumpy_missiles.jpg" alt="Magic missiles in Grumpy Visitors" /></p>
-<p>Grumpy Visitors is a top-down 2D co-op action/arcade game highly inspired by Evil Invasion. It runs on Amethyst game engine.</p>
-<p>This winter Grumpy Visitors received some updates with the focus on graphics and UI:</p>
+<p>Grumpy Visitors is a top-down 2D co-op action/arcade game
+highly inspired by Evil Invasion. It runs on Amethyst game engine.</p>
+<p>This winter Grumpy Visitors received some updates
+with the focus on graphics and UI:</p>
 <ul>
 <li>Repainting mage sprites with shaders</li>
 <li>New missiles graphics</li>
@@ -499,8 +543,11 @@ an 8-direction animated sprite with idle animations;</li>
 <h3 id="fix-your-time-step-in-rust-and-ggez"><a href="https://joetsoi.github.io/fix-your-timestep-rust-ggez/">Fix Your Time Step in Rust and GGEZ</a>&nbsp;<a class="anchor" href="#fix-your-time-step-in-rust-and-ggez" aria-hidden="true">#</a>
 </h3>
 <p><a href="https://joetsoi.github.io/fix-your-timestep-rust-ggez/"><img src="https://rust-gamedev.github.io/posts/newsletter-007/fyt-ggez.gif" alt="Demonstration of interpolation" /></a></p>
-<p><a href="https://joetsoi.github.io">joetsoi</a> has written <a href="https://joetsoi.github.io/fix-your-timestep-rust-ggez/">a blog post</a>, demonstrating how the concepts from the well-known '<a href="https://gafferongames.com/post/fix_your_timestep/">Fix Your Timestep</a>' article can be applied when making games with Rust and GGEZ.</p>
-<p>The examples are very well explained, and can easily be translated to other engines, so it's worth checking out even if you're not a GGEZ user!</p>
+<p><a href="https://joetsoi.github.io">joetsoi</a> has written <a href="https://joetsoi.github.io/fix-your-timestep-rust-ggez/">a blog post</a>, demonstrating how the concepts
+from the well-known '<a href="https://gafferongames.com/post/fix_your_timestep/">Fix Your Timestep</a>' article can be applied
+when making games with Rust and GGEZ.</p>
+<p>The examples are very well explained, and can easily be translated
+to other engines, so it's worth checking out even if you're not a GGEZ user!</p>
 <h3 id="this-month-in-rustsim-9-nov-2019-to-feb-2020"><a href="https://rustsim.org/blog/2020/03/01/this-month-in-rustsim">This Month in RustSim #9 (Nov 2019 to Feb 2020)</a>&nbsp;<a class="anchor" href="#this-month-in-rustsim-9-nov-2019-to-feb-2020" aria-hidden="true">#</a>
 </h3>
 <p><img src="https://rust-gamedev.github.io/posts/newsletter-007/logo_salva_full.svg" alt="Salva logo" /></p>
@@ -591,12 +638,16 @@ storages are now automatically created when they are first accessed;</li>
 </ul>
 <h3 id="image-v0-23"><a href="https://github.com/image-rs/image">image</a> v0.23&nbsp;<a class="anchor" href="#image-v0-23" aria-hidden="true">#</a>
 </h3>
-<p><a href="https://github.com/image-rs/image">image</a> crate provides basic imaging processing functions and methods for converting to and from image formats.</p>
-<p>Check out <a href="https://blog.image-rs.org/2020/02/07/release-0.23.0.html">the release blog</a> for 0.23! It comes with improvements to error handling, and the buffer and loading interfaces.</p>
+<p><a href="https://github.com/image-rs/image">image</a> crate provides basic imaging processing functions and methods
+for converting to and from image formats.</p>
+<p>Check out <a href="https://blog.image-rs.org/2020/02/07/release-0.23.0.html">the release blog for 0.23</a>!
+It comes with improvements to error handling,
+and the buffer and loading interfaces.</p>
 <h3 id="superluminal-perf-rs"><a href="https://github.com/embarkStudios/superluminal-perf-rs">superluminal-perf-rs</a>&nbsp;<a class="anchor" href="#superluminal-perf-rs" aria-hidden="true">#</a>
 </h3>
 <p><img src="https://rust-gamedev.github.io/posts/newsletter-007/superlumunal.png" alt="Logo" /></p>
-<p><a href="https://superluminal.eu/">Superluminal</a> is a next-generation CPU sampling profiler for C/C++ on Windows
+<p><a href="https://superluminal.eu/">Superluminal</a> is a next-generation CPU sampling profiler
+for C/C++ on Windows
 that has <a href="https://superluminal.eu/rust">recently got an official Rust support</a>.</p>
 <p><a href="https://rust-gamedev.github.io/posts/newsletter-007/superluminal-app.png"><img src="https://rust-gamedev.github.io/posts/newsletter-007/superluminal-app.png" alt="UI example" /></a></p>
 <hr />
@@ -725,7 +776,10 @@ to showcase new voxel renderer:</p>
 <p><a href="https://youtu.be/98XdA3BpWZU"><img src="https://rust-gamedev.github.io/posts/newsletter-007/tikan-youtube.png" alt="youtube screenshot: glowing spheres" /></a></p>
 <h3 id="patchwork"><a href="https://github.com/RedSquirrelsNut/patchwork">Patchwork</a>&nbsp;<a class="anchor" href="#patchwork" aria-hidden="true">#</a>
 </h3>
-<p><a href="https://github.com/RedSquirrelsNut/patchwork">Patchwork</a> is a convenient crate for drawing tiles from a tilesheet using a 'SpriteBatch' with <code>ggez</code>. It is an update to the <code>Mosaic</code> crate by <a href="https://github.com/repnop/mosaic">Repnop</a>, which is no longer maintained.</p>
+<p><a href="https://github.com/RedSquirrelsNut/patchwork">Patchwork</a> is a convenient crate for drawing tiles from a tilesheet
+using a 'SpriteBatch' with <code>ggez</code>.
+It is an update to <a href="https://github.com/repnop/mosaic">the <code>Mosaic</code> crate by @Repnop</a>,
+which is no longer maintained.</p>
 <h3 id="kas-gui-v0-3"><a href="https://github.com/kas-gui/kas">KAS</a> GUI v0.3&nbsp;<a class="anchor" href="#kas-gui-v0-3" aria-hidden="true">#</a>
 </h3>
 <p><img src="https://rust-gamedev.github.io/posts/newsletter-007/kas.png" alt="KAS widgets example" /></p>
@@ -757,14 +811,28 @@ Some of the updates:</p>
 <p><img src="https://rust-gamedev.github.io/posts/newsletter-007/oxygengine-dark-logo.svg" alt="Oxygengine logo" /></p>
 <p>This month <a href="https://github.com/PsichiX/Oxygengine">Oxygengine</a> got new version 0.7.0 with
 <a href="https://reddit.com/r/rust_gamedev/comments/fd7kza/oxygengine_visual_novel_and_animation_modules_are">Visual Novel and Animation</a>
-modules that allows users to focus on making VN games easily, with virtually no code needed to be written - it is a groundbreaking start in developing a set of tools for the professional game developers.</p>
+modules that allows users to focus on making VN games easily,
+with virtually no code needed to be written -
+it is a groundbreaking start in developing a set of tools
+for the professional game developers.</p>
 <blockquote>
-<p>As few might notice, Oxygengine is starting to get more complex modules, there is a reason for that - this engine is made with one big goal in mind, which is: to became a tool used by professionals, giving easy way to make complex games easily, therefore the current milestone is about bringing a basic game editor with first game maker module along with blueprints-like visual scripting and animation tool - the most important tools for visual novel game designers!</p>
+<p>As few might notice, Oxygengine is starting to get more complex modules,
+there is a reason for that - this engine is made with one big goal in mind,
+which is: to became a tool used by professionals,
+giving easy way to make complex games easily,
+therefore the current milestone is about bringing a basic game editor
+with first game maker module along with blueprints-like visual scripting
+and animation tool - the most important tools for visual novel game designers!</p>
 </blockquote>
 <p><img src="https://rust-gamedev.github.io/posts/newsletter-007/oxygengine-visual-novel-teaser.gif" alt="Oxygengine Visual Novel Teaser" /></p>
-<p>You can find sources of the project that shows how to use these modules in the <a href="https://github.com/PsichiX/Oxygengine/tree/master/demos/visual-novel-testbed">engine demo projects</a>.</p>
-<p>Another thing that was shipped in last milestone was a module that allows to make and run your game logic designed in Blueprint-like visual scripting.
-Next milestone is focused on delivering a base for professional modular game editor that will allow users to easily create a complex and animated Visual Novel games using Visual Scripting - game makers for another genres are currently in planning stage.</p>
+<p>You can find sources of the project that shows how to use these modules
+in the <a href="https://github.com/PsichiX/Oxygengine/tree/master/demos/visual-novel-testbed">engine demo projects</a>.</p>
+<p>Another thing that was shipped in last milestone was a module that allows
+to make and run your game logic designed in Blueprint-like visual scripting.
+Next milestone is focused on delivering a base for professional modular
+game editor that will allow users to easily create a complex and animated
+Visual Novel games using Visual Scripting -
+game makers for another genres are currently in planning stage.</p>
 <h3 id="bracket-lib-rltk-roguelike-tutorial"><a href="https://github.com/thebracket/rltk_rs">bracket-lib (RLTK)</a> &amp; <a href="http://bfnightly.bracketproductions.com/rustbook">Roguelike Tutorial</a>&nbsp;<a class="anchor" href="#bracket-lib-rltk-roguelike-tutorial" aria-hidden="true">#</a>
 </h3>
 <p><img src="https://rust-gamedev.github.io/posts/newsletter-007/roguelike-tutorial.jpg" alt="Different font makes the log easier to read" /></p>

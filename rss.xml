@@ -549,7 +549,7 @@ and &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;amethyst&#x2F;amethyst&#x
 &lt;li&gt;VK_KHR_ray_tracing&lt;&#x2F;li&gt;
 &lt;li&gt;VK_KHR_external_memory_fd&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3 id=&quot;rectangle-pack-v0-1-5&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;rectangle-pack-homepage&quot;&gt;Rectangle Pack&lt;&#x2F;a&gt; v0.1.5&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#rectangle-pack-v0-1-5&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;h3 id=&quot;rectangle-pack-v0-1-5&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;chinedufn&#x2F;rectangle-pack&quot;&gt;Rectangle Pack&lt;&#x2F;a&gt; v0.1.5&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#rectangle-pack-v0-1-5&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
 &lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;code&gt;Rectangle Pack&lt;&#x2F;code&gt; is a Rust crate focused on rectangle packing: Laying out any smaller
 number of rectangles inside any number of larger rectangles. The developer&#x27;s use
@@ -557,8 +557,8 @@ for the library is in packing textures from texture atlases on the GPU, although
 the library does not have any concept of texture, and can be used in any
 context where rectangle packing may be needed.&lt;&#x2F;p&gt;
 &lt;p&gt;Version 0.1.5 adds implementation for error handling for RectanglePackError.&lt;&#x2F;p&gt;
-&lt;p&gt;A getting started guide is available on the &lt;a href=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;rectangle-pack-homepage&quot;&gt;project&#x27;s homepage&lt;&#x2F;a&gt;.
-Full documentation is available at the &lt;a href=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;rectangle-pack-docs&quot;&gt;rectangle-pack docs.rs section&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;A getting started guide is available on the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;chinedufn&#x2F;rectangle-pack&quot;&gt;project&#x27;s homepage&lt;&#x2F;a&gt;.
+Full documentation is available at the &lt;a href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;rectangle-pack&#x2F;0.1.5&quot;&gt;rectangle-pack docs.rs section&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;popular-workgroup-issues-in-github&quot;&gt;Popular Workgroup Issues in Github&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#popular-workgroup-issues-in-github&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
 &lt;&#x2F;h2&gt;
 &lt;!-- Up to 10 links to interesting issues --&gt;

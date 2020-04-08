@@ -7,7 +7,638 @@
         <generator>Zola</generator>
         <language>en</language>
         <atom:link href="https://rust-gamedev.github.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <lastBuildDate>Thu, 05 Mar 2020 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 08 Apr 2020 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>This Month in Rust GameDev #8 - March 2020</title>
+                <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
+                <link>https://rust-gamedev.github.io/posts/newsletter-008/</link>
+                <guid>https://rust-gamedev.github.io/posts/newsletter-008/</guid>
+                <description>&lt;!-- markdownlint-disable no-trailing-punctuation --&gt;
+&lt;p&gt;Welcome to the eighth issue of the Rust GameDev Workgroup’s
+monthly newsletter.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;Rust&lt;&#x2F;a&gt; is a systems language pursuing the trifecta:
+safety, concurrency, and speed.
+These goals are well-aligned with game development.&lt;&#x2F;p&gt;
+&lt;p&gt;We hope to build an inviting ecosystem for anyone wishing
+to use Rust in their development process!
+Want to get involved? &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-gamedev&#x2F;wg#join-the-fun&quot;&gt;Join the Rust GameDev working group!&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Want something mentioned in the next newsletter?
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-gamedev&#x2F;rust-gamedev.github.io&quot;&gt;Send us a pull request&lt;&#x2F;a&gt;.
+Feel free to send PRs about your own projects!&lt;&#x2F;p&gt;
+&lt;!--
+Ideal section structure is:
+
+```
+### [Title]
+
+![image&#x2F;GIF description](image link)
+
+A paragraph or two with a summary and [useful links].
+
+_Discussions:
+[&#x2F;r&#x2F;rust](https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;todo),
+[twitter](https:&#x2F;&#x2F;twitter.com&#x2F;todo&#x2F;status&#x2F;123456)_
+
+[Title]: https:&#x2F;&#x2F;first.link
+[useful links]: https:&#x2F;&#x2F;other.link
+```
+
+Discussion links are added only if they contain
+some actual interesting discussions.
+
+If needed, a section can be split into subsections with a &quot;------&quot; delimiter.
+--&gt;
+&lt;h2 id=&quot;spreading-the-word&quot;&gt;Spreading the Word&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#spreading-the-word&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;If you&#x27;re working on a project that heavily relies on some engine&#x2F;framework,
+consider informing its authors about your work:
+as the community is growing it happens more and more that
+frameworks&#x2F;engines authors just don&#x27;t know about users of their libs
+(this note was requested by Icefox in relation to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ggez&#x2F;ggez&#x2F;blob&#x2F;master&#x2F;docs&#x2F;Projects.md&quot;&gt;GGEZ projects&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;game-updates&quot;&gt;Game Updates&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#game-updates&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;dynamaze&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;boringcactus.itch.io&#x2F;dynamaze&quot;&gt;DynaMaze&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#dynamaze&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;dynamaze.png&quot; alt=&quot;DynaMaze promotional image&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;boringcactus.itch.io&#x2F;dynamaze&quot;&gt;DynaMaze&lt;&#x2F;a&gt; is an &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;boringcactus&#x2F;dynamaze&quot;&gt;open-source&lt;&#x2F;a&gt; multiplayer
+puzzle&#x2F;strategy game written in Rust and compiled to WebAssembly, made by
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;boringcactus&quot;&gt;@boringcactus&lt;&#x2F;a&gt;. Adjust the maze to build a path to your target and
+keep the other players from getting to theirs.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;slime99&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;gridbugs.itch.io&#x2F;slime99&quot;&gt;Slime99&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#slime99&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;slime99.png&quot; alt=&quot;Slime99&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;gridbugs.itch.io&#x2F;slime99&quot;&gt;Slime99&lt;&#x2F;a&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;stevebob&quot;&gt;@stevebob&lt;&#x2F;a&gt; is an &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;stevebob&#x2F;slime99&quot;&gt;open-source&lt;&#x2F;a&gt;
+roguelike made for the &lt;a href=&quot;https:&#x2F;&#x2F;itch.io&#x2F;jam&#x2F;7drl-challenge-2020&quot;&gt;7 Day Roguelike 2020&lt;&#x2F;a&gt; game jam.&lt;&#x2F;p&gt;
+&lt;p&gt;A traditional roguelike where the outcomes of attacking and defending are
+pre-determined and visible. Gameplay revolves around fighting slimes, adding to
+your sequence of combat outcomes, and using abilities to modify the order in
+which combat outcomes occur. It’s set in a neon sewer!&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;will&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;azriel.im&#x2F;will&quot;&gt;Will&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#will&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;will_main.png&quot; alt=&quot;Will main menu&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;azriel.im&#x2F;will&quot;&gt;Will&lt;&#x2F;a&gt; is a 2.5D moddable action&#x2F;adventure game.&lt;&#x2F;p&gt;
+&lt;p&gt;Highlights of &lt;a href=&quot;https:&#x2F;&#x2F;azriel.im&#x2F;will&#x2F;2020&#x2F;03&#x2F;13&#x2F;join-me&#x2F;&quot;&gt;this month&#x27;s update&lt;&#x2F;a&gt; include:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Going &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;azriel91&#x2F;autexousious&quot;&gt;open-source&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Network play (early version)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;tennis-academy-dash&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;iolivia.itch.io&#x2F;tennis-academy-dash&quot;&gt;Tennis Academy: Dash&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#tennis-academy-dash&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;tennis.gif&quot; alt=&quot;gameplay sample&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;oliviff&quot;&gt;@oliviff&lt;&#x2F;a&gt; released &lt;a href=&quot;https:&#x2F;&#x2F;iolivia.itch.io&#x2F;tennis-academy-dash&quot;&gt;Tennis Academy: Dash&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;oliviff&#x2F;status&#x2F;1243972292750819329&quot;&gt;v0.1.7&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;👟 blue players are back&lt;&#x2F;li&gt;
+&lt;li&gt;🎆 improved particle effects&lt;&#x2F;li&gt;
+&lt;li&gt;🖼️ a few art fixes&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Also, &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;oliviff&#x2F;status&#x2F;1238978081429299201&quot;&gt;@oliviff continues to work on their Rust gamedev tutorial&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;for-the-quest&quot;&gt;For The Quest&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#for-the-quest&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;forthequest.jpg&quot; alt=&quot;For The Quest screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;For The Quest is the working title for a game in early development by
+&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;seratonik&quot;&gt;@seratonik&lt;&#x2F;a&gt;. Written entirely in Rust and compiled to WebAssembly,
+For The Quest is destined to become a MMORPG set in a post-apocalyptic
+Earth where your goal is to band together into like-minded factions to
+not only survive in this new world, but to unearth the cause of humanity&#x27;s
+downfall.&lt;&#x2F;p&gt;
+&lt;p&gt;For The Quest is currently undergoing engine development with a focus on
+running smoothly in modern browsers using WebGL 2.0 before moving onto
+native desktop ports.&lt;&#x2F;p&gt;
+&lt;p&gt;New developments in March:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Collision and Activation-Based Triggerable Entities (Able to load new areas)&lt;&#x2F;li&gt;
+&lt;li&gt;New overworld &amp;quot;sky light&amp;quot; directional lighting shaders in addition to
+omni-directional point lighting for underground areas&lt;&#x2F;li&gt;
+&lt;li&gt;New Ice Cavern models and textures, establishing a hybrid pixel-art in 3D
+style - mapping tool has been expanded to allow for rotating &amp;quot;tiles&amp;quot; to
+build extensive environments in a simple text format for rapid prototyping&lt;&#x2F;li&gt;
+&lt;li&gt;Specular maps added to the engine and world for that extra shine&lt;&#x2F;li&gt;
+&lt;li&gt;Started refactoring the rendering pipeline to allow for screen-space effects
+such as reflections and ambient occlusion&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Follow &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;seratonik&quot;&gt;@seratonik&lt;&#x2F;a&gt; on Twitter for updates.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;urban-gift-teaser-video&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;UrbanGiftGame&quot;&gt;Urban Gift&lt;&#x2F;a&gt;: Teaser Video&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#urban-gift-teaser-video&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;UrbanGiftGame&quot;&gt;Urban Gift&lt;&#x2F;a&gt; is part detective game and part superhero simulator.
+This month a teaser video was released:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;1dMt8e9Dx3A&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;urban-gift-video.png&quot; alt=&quot;youtube preview&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Follow development updates on &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;UrbanGiftGame&quot;&gt;Twitter&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;realm-one&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Machine-Hum&#x2F;realm.one&quot;&gt;Realm.One&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#realm-one&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;S5SCBe_CzjQ&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;realm-one-video.png&quot; alt=&quot;screenshot from the video&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Machine-Hum&#x2F;realm.one&quot;&gt;Realm.One&lt;&#x2F;a&gt; is an open-source MMO game
+written using the Amethyst game engine.
+This month two videos were posted:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;youtu.be&#x2F;S5SCBe_CzjQ&quot;&gt;&amp;quot;GameDev in Rust (Episode 0)&amp;quot;&lt;&#x2F;a&gt; -
+ECS-based design with Amethyst, networking and tiled 2d based design.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;youtube.com&#x2F;watch?v=JxT3r56aqcA&quot;&gt;&amp;quot;GameDev in Rust (Episode 1): Monsters and AI!&amp;quot;&lt;&#x2F;a&gt; -
+how the monsters are managed on server-side
+and integration with Tiled map editor.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;colony-genesis&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;nativesystems.itch.io&#x2F;colony&quot;&gt;Colony Genesis&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#colony-genesis&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;colony.png&quot; alt=&quot;ASCII art logo with an ant&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;nativesystems.rs&quot;&gt;Native Systems&lt;&#x2F;a&gt; is working on &amp;quot;Colony Genesis&amp;quot; -
+an ant colony sandbox game with ASCII graphics.&lt;&#x2F;p&gt;
+&lt;p&gt;This month v0.1.1 and v0.1.2 versions were released. Some of the updates:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add color palette options to Settings including a modified palette for red-green color blindness&lt;&#x2F;li&gt;
+&lt;li&gt;Add lifecycles to more ant castes&lt;&#x2F;li&gt;
+&lt;li&gt;Nurse ants give food to larvae&lt;&#x2F;li&gt;
+&lt;li&gt;Nurse ants on the surface will return to the colony&lt;&#x2F;li&gt;
+&lt;li&gt;Fix for foragers getting stuck in dig state at colony entrance&lt;&#x2F;li&gt;
+&lt;li&gt;Updated pathfinding&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;ascension-2&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;outkine.itch.io&#x2F;ascension-2&quot;&gt;Ascension 2&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#ascension-2&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;ascension.gif&quot; alt=&quot;gameplay samble: moving platforms, projectiles, and changing gravity&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;outkine.itch.io&#x2F;ascension-2&quot;&gt;Ascension 2&lt;&#x2F;a&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;outkine&quot;&gt;@outkine&lt;&#x2F;a&gt; is a simple gravity-based platformer.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hop your way through bite-sized levels while dodging spikes and turrets.
+Then, change the direction of gravity, and do it all again!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;outkine&#x2F;ascension-rust&quot;&gt;The source code is available here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;pglowrpg&quot;&gt;pGLOWrpg&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#pglowrpg&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;pglowrpg.png&quot; alt=&quot;Improved temperature map generation&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;Roal_Yr&quot;&gt;@Roal_Yr&lt;&#x2F;a&gt; tweeted a bunch of updates about their &amp;quot;pGLOWrpg&amp;quot; project:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;Roal_Yr&#x2F;status&#x2F;1236003795265519616&quot;&gt;Rivers erosion&lt;&#x2F;a&gt;:
+this will ensure no rivers flow upwards and the canyons
+through the landmass are more smooth.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;Roal_Yr&#x2F;status&#x2F;1242824451449856004&quot;&gt;River segmentation and width increment&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;Roal_Yr&#x2F;status&#x2F;1236268367968964610&quot;&gt;Improved the temperature map generation&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;Roal_Yr&#x2F;status&#x2F;1236366942094622721&quot;&gt;Improved topography map rendering&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;akigi&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;akigi.com&quot;&gt;Akigi&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#akigi&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;akigi.png&quot; alt=&quot;game screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;akigi.com&quot;&gt;Akigi&lt;&#x2F;a&gt; is a multiplayer online world where most believe that humans are inferior.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Some of March&#x27;s updates:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;devjournal.akigi.com&#x2F;march-2020&#x2F;058-2020-03-15.html&quot;&gt;Migration to specs is finished&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;devjournal.akigi.com&#x2F;march-2020&#x2F;058-2020-03-15.html#asset-compilation-rewrite&quot;&gt;Asset compilation rewrite&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;devjournal.akigi.com&#x2F;march-2020&#x2F;059-2020-03-22.html&quot;&gt;Deploying process update&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;devjournal.akigi.com&#x2F;march-2020&#x2F;060-2020-03-29.html&quot;&gt;Preparations for the initial alpha release is being done&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Full devlogs:
+&lt;a href=&quot;https:&#x2F;&#x2F;devjournal.akigi.com&#x2F;march-2020&#x2F;056-2020-03-01.html&quot;&gt;#056&lt;&#x2F;a&gt;,
+&lt;a href=&quot;https:&#x2F;&#x2F;devjournal.akigi.com&#x2F;march-2020&#x2F;057-2020-03-08.html&quot;&gt;#057&lt;&#x2F;a&gt;,
+&lt;a href=&quot;https:&#x2F;&#x2F;devjournal.akigi.com&#x2F;march-2020&#x2F;058-2020-03-15.html&quot;&gt;#058&lt;&#x2F;a&gt;,
+&lt;a href=&quot;https:&#x2F;&#x2F;devjournal.akigi.com&#x2F;march-2020&#x2F;059-2020-03-22.html&quot;&gt;#059&lt;&#x2F;a&gt;,
+&lt;a href=&quot;https:&#x2F;&#x2F;devjournal.akigi.com&#x2F;march-2020&#x2F;060-2020-03-29.html&quot;&gt;#060&lt;&#x2F;a&gt;,&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;sphere-game&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;coffejunkstudio.itch.io&#x2F;spheregame&quot;&gt;Sphere Game&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#sphere-game&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;sphere.png&quot; alt=&quot;game screenshot: spheres!&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In &lt;a href=&quot;https:&#x2F;&#x2F;coffejunkstudio.itch.io&#x2F;spheregame&quot;&gt;Sphere Game&lt;&#x2F;a&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;CoffeJunkStudio&quot;&gt;Coffé Junk Studio&lt;&#x2F;a&gt;
+you control a sphere in a bowl-shaped 2D space:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Your goal is to hit the other spheres as hard as possible
+to shatter them into pieces!
+But take care; if you get hit too hard too often by other spheres,
+you will be smashed yourself!
+Avoiding them is challenging as the bent space keeps dragging you to the center.
+Can you destroy everything around you until you are the only one left?&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;The game is a test for the studio&#x27;s &amp;quot;Sphere Engine&amp;quot; engine
+that is being implemented using Rust and Vulkan.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;helix-repair&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;coffejunkstudio.itch.io&#x2F;helix-repair&quot;&gt;Helix Repair&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#helix-repair&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;helix-repair.png&quot; alt=&quot;game screenshot: DNA&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;coffejunkstudio.itch.io&#x2F;helix-repair&quot;&gt;Helix Repair&lt;&#x2F;a&gt; is another game by &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;CoffeJunkStudio&quot;&gt;Coffé Junk Studio&lt;&#x2F;a&gt;
+written using the same engine.
+Your task is to repair a broken DNA sequence
+by replacing wrong nucleobases with the right ones.
+You have 20 seconds: how many nucleobases can you repair within that time?&lt;&#x2F;p&gt;
+&lt;p&gt;The game was developed within one weekend during
+the Global Game Jam 2020, whose theme was &amp;quot;repair&amp;quot;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;garden-march-devlog&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;epcc.itch.io&#x2F;garden&quot;&gt;Garden&lt;&#x2F;a&gt;: March Devlog&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#garden-march-devlog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;logicsoup&#x2F;status&#x2F;1246774418233348096&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;garden.gif&quot; alt=&quot;demo preview&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;epcc.itch.io&#x2F;garden&quot;&gt;Garden&lt;&#x2F;a&gt; is an upcoming game centered around growing realistic plants.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;cyberplant.xyz&#x2F;posts&#x2F;march&quot;&gt;March&lt;&#x2F;a&gt; devlogs were posted.
+Some of the updates:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Splashing sweat symbol water diffusion in the new soil;&lt;&#x2F;li&gt;
+&lt;li&gt;Herb improved leaf translucency;&lt;&#x2F;li&gt;
+&lt;li&gt;Joystickcollision detection, player movement;&lt;&#x2F;li&gt;
+&lt;li&gt;Artist palette debug tool for visualizing the forces
+acting upon a game object and its other vectors.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;zemeroth&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ozkriff&#x2F;zemeroth&quot;&gt;Zemeroth&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#zemeroth&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;zemeroth.jpeg&quot; alt=&quot;new icons and ability descriptions&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ozkriff&#x2F;zemeroth&quot;&gt;Zemeroth&lt;&#x2F;a&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;ozkriff&quot;&gt;@ozkriff&lt;&#x2F;a&gt; is a minimalistic 2D turn-based tactical game.
+Some of this month&#x27;s updates:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;ozkriff&#x2F;status&#x2F;1241718003470917635&quot;&gt;Some of the text buttons were replaced by icons&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Ability descriptions.&lt;&#x2F;li&gt;
+&lt;li&gt;Popup screens and exit confirmation dialogs.&lt;&#x2F;li&gt;
+&lt;li&gt;New &lt;code&gt;zgui&lt;&#x2F;code&gt; widgets: ColoredRect, LayersLayout.&lt;&#x2F;li&gt;
+&lt;li&gt;Inactive buttons are either hidden or grayed-out now.&lt;&#x2F;li&gt;
+&lt;li&gt;The project &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;ozkriff&#x2F;status&#x2F;1244960610296696834&quot;&gt;fully switched to &lt;code&gt;good-web-game&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;
+as the first step of the migration to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;not-fl3&#x2F;miniquad&quot;&gt;miniquad&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;veloren&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;veloren.net&quot;&gt;Veloren&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#veloren&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;veloren1.png&quot; alt=&quot;LoD&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;^ &lt;em&gt;Work on Level of Detail&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;veloren.net&quot;&gt;Veloren&lt;&#x2F;a&gt; is an open world, open-source voxel RPG
+inspired by Dwarf Fortress and Cube World.&lt;&#x2F;p&gt;
+&lt;p&gt;Many systems have been worked on in March. Worldsim is making progress through
+simulation of civilization over time. The map has seen improvements for
+lighting. Certain parts of the UI have been going through big changes. Many
+small outstanding issues have been worked on by a few diligent contributors.
+Networking is also being reworked from the ground up.&lt;&#x2F;p&gt;
+&lt;p&gt;Here is the March changelog:&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
+&lt;span style=&quot;color:#c0c5ce;&quot;&gt;- Added sfx for wielding&#x2F;unwielding weapons
+- Fixed NPCs attacking the player forever after killing them
+- Added sfx for collecting, dropping and using inventory items
+- New attack animation
+- weapon control system
+- Game pauses when in singleplayer and pause menu
+- Added authentication system (to play on the official server register on https:&#x2F;&#x2F;account.veloren.net)
+- Added gamepad&#x2F;controller support
+- Added player feedback when attempting to pickup an item with a full inventory
+- Added free look
+- Added Italian, Portuguese, and Turkish translations
+&lt;&#x2F;span&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;veloren2.png&quot; alt=&quot;Hanging out&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;You can read more about some specific topics:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;veloren.net&#x2F;devblog-57#new-networking-protocol-by-xmac94x&quot;&gt;New Networking Protocol&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;veloren.net&#x2F;devblog-58#the-external-work-of-imbris&quot;&gt;External Work&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;veloren.net&#x2F;devblog-59#status-of-the-winit-update-branch&quot;&gt;Winit Issues&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;veloren.net&#x2F;devblog-59#ui-improvements-by-pfau-and-co&quot;&gt;UI Improvements&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;veloren.net&#x2F;devblog-60#map-improvements-by-sharp&quot;&gt;Map Improvements&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;veloren.net&#x2F;devblog-61#world-simulation-process-by-zesterer&quot;&gt;World Simulation Process&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;With the Content Update scheduled to come out at the end of April, many systems
+will be finishing up development. Keep a lookout for the launch party!&lt;&#x2F;p&gt;
+&lt;p&gt;March&#x27;s full weekly devlogs: &amp;quot;This Week In Veloren...&amp;quot;:
+&lt;a href=&quot;https:&#x2F;&#x2F;veloren.net&#x2F;devblog-57&quot;&gt;#57&lt;&#x2F;a&gt;,
+&lt;a href=&quot;https:&#x2F;&#x2F;veloren.net&#x2F;devblog-58&quot;&gt;#58&lt;&#x2F;a&gt;,
+&lt;a href=&quot;https:&#x2F;&#x2F;veloren.net&#x2F;devblog-59&quot;&gt;#59&lt;&#x2F;a&gt;,
+&lt;a href=&quot;https:&#x2F;&#x2F;veloren.net&#x2F;devblog-60&quot;&gt;#60&lt;&#x2F;a&gt;,
+&lt;a href=&quot;https:&#x2F;&#x2F;veloren.net&#x2F;devblog-61&quot;&gt;#61&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;library-tooling-updates&quot;&gt;Library &amp;amp; Tooling Updates&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#library-tooling-updates&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;bracket-lib&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;thebracket&#x2F;bracket-lib&quot;&gt;bracket-lib&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#bracket-lib&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;cp437-demo.gif&quot; alt=&quot;lighing demo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;thebracket&#x2F;bracket-lib&quot;&gt;bracket-lib&lt;&#x2F;a&gt; (previously &lt;code&gt;rltk_rs&lt;&#x2F;code&gt;) by &lt;a href=&quot;https:&#x2F;&#x2F;patreon.com&#x2F;blackfuture&quot;&gt;@blackfuture&lt;&#x2F;a&gt;
+is a Rust implementation of &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;thebracket&#x2F;rltk&quot;&gt;C++ Roguelike Toolkit&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Some of this month&#x27;s updates:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Input API.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;bracket-color&lt;&#x2F;code&gt; now supports pallets and RGBA.&lt;&#x2F;li&gt;
+&lt;li&gt;The graphical (OpenGL, WASM, Amethyst) render targets now support alpha channel.&lt;&#x2F;li&gt;
+&lt;li&gt;Arbitrary clipping window on any layer.&lt;&#x2F;li&gt;
+&lt;li&gt;New &lt;code&gt;VirtualConsole&lt;&#x2F;code&gt; system.&lt;&#x2F;li&gt;
+&lt;li&gt;New functions for right-justifying printed text.&lt;&#x2F;li&gt;
+&lt;li&gt;Fonts and dimensions in terminal layers can now be switched at run-time.&lt;&#x2F;li&gt;
+&lt;li&gt;New layer type that lets you specify glyph position as a float.&lt;&#x2F;li&gt;
+&lt;li&gt;New sprite layer.&lt;&#x2F;li&gt;
+&lt;li&gt;Updated examples.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;this-month-in-rustsim-10-march-2020&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rustsim.org&#x2F;blog&#x2F;2020&#x2F;04&#x2F;01&#x2F;this-month-in-rustsim&quot;&gt;This month in rustsim #10 (March 2020)&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#this-month-in-rustsim-10-march-2020&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;rustsim-simba.svg&quot; alt=&quot;Simba logo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Main updates:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;simba&quot;&gt;simba&lt;&#x2F;a&gt; - a crate that defines a set of traits for writing code
+that can be generic with regard to the number
+of lanes of the input numeric value.
+Those traits are implemented by f32, u32, i16, bool
+as well as SIMD types like f32x4, u32x8, i16x2, etc.&lt;&#x2F;li&gt;
+&lt;li&gt;benchmarks:
+&lt;a href=&quot;https:&#x2F;&#x2F;rustsim.org&#x2F;blog&#x2F;2020&#x2F;03&#x2F;23&#x2F;simd-aosoa-in-nalgebra&quot;&gt;&amp;quot;SIMD Array-of-Structures-of-Arrays in nalgebra and comparison with ultraviolet&amp;quot;&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rustsim&#x2F;alga&quot;&gt;alga&lt;&#x2F;a&gt; abstract algebra crate is switched to passive maintenance mode.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;gfx-rs-and-wgpu-news&quot;&gt;gfx-rs and wgpu news&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#gfx-rs-and-wgpu-news&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;deeper.png&quot; alt=&quot;Deeper game&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;^ &lt;em&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;arnfaldur&#x2F;deeper&quot;&gt;deeper&lt;&#x2F;a&gt; uses wgpu for rendering&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;gfx&#x2F;&quot;&gt;gfx-hal-0.5&lt;&#x2F;a&gt; was released!
+Improvements done in March:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Debug markers.
+Users are now able to debug-annotate parts of the rendered frame,
+so that inspecting it in a GPU debugger is more enjoyable.&lt;&#x2F;li&gt;
+&lt;li&gt;The generic range parameters are removed in favor of simple structs.
+This is a move towards simpler low-level API.&lt;&#x2F;li&gt;
+&lt;li&gt;Physical device features for NDC Y-flip and sampler mirror clamp are added.&lt;&#x2F;li&gt;
+&lt;li&gt;Physical device performance hints are introduced.
+The first hint is for &amp;quot;base vertex&#x2F;instance&amp;quot; support.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;SmallVec&lt;&#x2F;code&gt; is removed from the API, it&#x27;s reshaped
+to avoid any heap allocations.
+Previously, it had to touch the heap on multiple descriptor sets
+or command buffers.&lt;&#x2F;li&gt;
+&lt;li&gt;DX12 got true support for read-only storage bindings.
+This is one of the opt-in derivations from Vulkan that allow to better map
+users logic to non-Vulkan backends, also used by WebGPU.&lt;&#x2F;li&gt;
+&lt;li&gt;Last but not the least, @zicklag
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;gfx&#x2F;pull&#x2F;3151&quot;&gt;has been fighting&lt;&#x2F;a&gt;
+with the OpenGL backend to align its API with the rest of the crowd,
+armed with &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pcwalton&#x2F;surfman&quot;&gt;surfman&lt;&#x2F;a&gt;.
+The fight is reading conclusion, and we are crossing fingers
+to add OpenGL support to &lt;code&gt;wgpu-rs&lt;&#x2F;code&gt; as it lands.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;wgpu&quot;&gt;wgpu&lt;&#x2F;a&gt; and
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;wgpu-rs&quot;&gt;wgpu-rs&lt;&#x2F;a&gt; changes in March:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;@grovesNL reached an epic milestone in the Web target
+by showing the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;wgpu-rs&#x2F;pull&#x2F;193#issuecomment-599156540&quot;&gt;first triangle&lt;&#x2F;a&gt;.
+Users will soon be able to seamlessly target the web
+with their existing &lt;code&gt;wgpu-rs&lt;&#x2F;code&gt; applications. 🚀&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;wgpu-types&lt;&#x2F;code&gt; crate is created to share types between the Web target
+and the native one.&lt;&#x2F;li&gt;
+&lt;li&gt;@lachlansneff improved the &lt;em&gt;async&lt;&#x2F;em&gt; story quite a bit,
+we also converted more methods to be asynchronous.&lt;&#x2F;li&gt;
+&lt;li&gt;Debug labels support.&lt;&#x2F;li&gt;
+&lt;li&gt;Id management story for browsers with a GPU process
+has been completely redesigned and now working well.&lt;&#x2F;li&gt;
+&lt;li&gt;All the objects are properly destroyed and GPU tracked if needed.&lt;&#x2F;li&gt;
+&lt;li&gt;Ability to provide a &lt;code&gt;Surface&lt;&#x2F;code&gt; so that the selected adapter can present to it.&lt;&#x2F;li&gt;
+&lt;li&gt;New &amp;quot;mailbox&amp;quot; present mode.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Satellite projects:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;naga&quot;&gt;naga&lt;&#x2F;a&gt; - the new in-house shader translator has reached the milestone
+of successfully loading a WGSL &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;naga&#x2F;blob&#x2F;thda1f6a4&#x2F;test-data&#x2F;boids.wgsl&quot;&gt;boids example&lt;&#x2F;a&gt;
+and generating a valid Metal source for it. 🎉&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;metal-rs&quot;&gt;metal-rs&lt;&#x2F;a&gt;
+has got a lot of contribution by @adamnemecek.
+Indirect command encoding is particularly exciting!&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;gfx-extras&quot;&gt;gfx-extras&lt;&#x2F;a&gt; is
+a new library that is forked from rendy-memory&#x2F;descriptor.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;gfx-ocean&quot;&gt;gfx-ocean&lt;&#x2F;a&gt; was moved
+to gfx-rs organization and updated to gfx-hal-0.5.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;portability&quot;&gt;gfx-portability&lt;&#x2F;a&gt; was also updated.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;miniquad&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;not-fl3&#x2F;miniquad&quot;&gt;miniquad&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#miniquad&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;miniquad.gif&quot; alt=&quot;miniquad android&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;not-fl3&#x2F;miniquad&quot;&gt;miniquad&lt;&#x2F;a&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;fedor_games&quot;&gt;@fedor_games&lt;&#x2F;a&gt; is a safe cross-platform rendering library
+focused on portability and low-end platforms support.
+Some of this month&#x27;s updates:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;example project by @PonasKovas,
+illustrating android and web platform-dependent configuration: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PonasKovas&#x2F;miniquad-mandelbrot&quot;&gt;mandelbrot&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;first prototype for embedded debug frame introspection: &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;fedor_games&#x2F;status&#x2F;1241616794114232321&quot;&gt;introspection&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;nannou-v0-13&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;nannou.cc&#x2F;posts&#x2F;nannou_v0.13&quot;&gt;Nannou v0.13&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#nannou-v0-13&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;nannou.png&quot; alt=&quot;Daily Sketch 0114 by Mactuitui&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;^ &lt;em&gt;Daily Sketch 0114 by Mactuitui&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;nannou.cc&quot;&gt;Nannou&lt;&#x2F;a&gt; is a creative coding framework that aims to make it easy
+for artists to express themselves with simple, fast, reliable code.&lt;&#x2F;p&gt;
+&lt;p&gt;This month &lt;a href=&quot;https:&#x2F;&#x2F;nannou.cc&#x2F;posts&#x2F;nannou_v0.13&quot;&gt;Nannou v0.13 was released&lt;&#x2F;a&gt;.
+Some of the updates:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Migration to wgpu-rs.&lt;&#x2F;li&gt;
+&lt;li&gt;Nicer native macOS experience.&lt;&#x2F;li&gt;
+&lt;li&gt;Capturing Frames &amp;amp; Textures.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Also check out lots of cool sketches from the community:
+&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;search?q=%23nannou&amp;amp;src=typed_query&quot;&gt;#nannou&lt;&#x2F;a&gt; tag on Twitter.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;quest-engine-part-2-deploying-a-rust-app-on-android&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;krupitskas.github.io&#x2F;posts&#x2F;quest-dev-part-2&#x2F;&quot;&gt;Quest Engine Part 2: Deploying a Rust App On Android&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#quest-engine-part-2-deploying-a-rust-app-on-android&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;quest.jpg&quot; alt=&quot;Oculus Quest&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;krupitskas.github.io&#x2F;posts&#x2F;quest-dev-part-2&#x2F;&quot;&gt;second part&lt;&#x2F;a&gt; of Nikita Krupitskas&#x27;
+&lt;a href=&quot;https:&#x2F;&#x2F;krupitskas.github.io&#x2F;posts&#x2F;quest-dev-part-1&#x2F;&quot;&gt;blog series&lt;&#x2F;a&gt; on developing a game engine for the Oculus Quest
+has been posted.&lt;&#x2F;p&gt;
+&lt;p&gt;This part of the series describes how a simple Rust project can be built
+for Android - useful even if you&#x27;re not targeting the Oculus hardware!&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;const-tweaker&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;tversteeg&#x2F;const-tweaker&quot;&gt;const-tweaker&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#const-tweaker&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;const-tweaker.gif&quot; alt=&quot;const-tweaker UI&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Thomas Versteeg has released a new crate called &lt;code&gt;const-tweaker&lt;&#x2F;code&gt;, which provides
+a web UI that can be used to tweak &lt;code&gt;const&lt;&#x2F;code&gt; variables in a running application.
+This can be used as a simpler alternative to embedded scripting languages or
+hot-reloading in your games.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Discussions: &lt;a href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;rust_gamedev&#x2F;comments&#x2F;fl7593&#x2F;announcing_consttweaker_change_your_constants&#x2F;&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;assets-manager&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;a1phyr&#x2F;assets_manager&quot;&gt;assets_manager&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#assets-manager&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;a1phyr has created a crate called &lt;code&gt;assets_manager&lt;&#x2F;code&gt;, which provides a convenient way
+to load and cache external resources. It abstracts over the filesystem logic, and
+provides a variety of built-in loaders for common Serde formats (e.g. TOML, JSON).
+Hot-reloading support is also planned in the future.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Discussions: &lt;a href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;rust_gamedev&#x2F;comments&#x2F;foywc6&#x2F;announcing_assets_manager_conveniently_load_store&#x2F;&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;netstack-v0-3-0&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;netstack&#x2F;0.3.0&quot;&gt;netstack&lt;&#x2F;a&gt; v0.3.0&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#netstack-v0-3-0&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;netstack&#x2F;0.3.0&quot;&gt;netstack&lt;&#x2F;a&gt; is a batteries included networking crate for games. Requiring an
+exchange of a secret and connection tokens. At the moment, UDP transport,
+connection management, packet signaling, and packet acknowledgement are
+features already implemented. Examples for getting started are provided
+on the &lt;a href=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;netstack&quot;&gt;crates.io page&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Version 0.3.0 adds basic monitoring functionality along with traits &lt;code&gt;ClientMonitor&lt;&#x2F;code&gt; and
+&lt;code&gt;ServerMonitor&lt;&#x2F;code&gt;. A work-in-progress prometheus exporter has also been added in this version.&lt;&#x2F;p&gt;
+&lt;p&gt;Issues and contributions can be made to &lt;a href=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;netstack-github&quot;&gt;Netstack&#x27;s github repository&lt;&#x2F;a&gt;.
+Work in progress documentation is available on &lt;a href=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;netstack-docs&quot;&gt;Netstack&#x27;s docs.rs&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;three-d-v0-1&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;asny&#x2F;three-d&quot;&gt;three-d&lt;&#x2F;a&gt; v0.1&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#three-d-v0-1&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;three-d-lighting.png&quot; alt=&quot;Lighting example&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;asny&#x2F;three-d&quot;&gt;three-d&lt;&#x2F;a&gt; is a renderer which targets both desktop (OpenGL) and web
+(WebAssembly + WebGL2) which makes it possible to develop a 3D application on
+desktop and easily deploy it on web.&lt;&#x2F;p&gt;
+&lt;p&gt;This month &lt;a href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;three-d&quot;&gt;three-d v0.1&lt;&#x2F;a&gt; was released.
+Main features:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Thin and low-level graphics abstraction layer which maps one-to-one with the
+OpenGL&#x2F;WebGL2 graphics APIs.&lt;&#x2F;li&gt;
+&lt;li&gt;Medium-level modular abstractions of common graphics concepts.&lt;&#x2F;li&gt;
+&lt;li&gt;Deferred renderer with high-level components.&lt;&#x2F;li&gt;
+&lt;li&gt;Default windows for easy setup.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;three-d-spider.jpeg&quot; alt=&quot;Spider example&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;It is possible to build your own rendering features from low- or medium-level
+components and combine with other high-level features, so you can already now
+make some cool stuff. See for example these &lt;a href=&quot;https:&#x2F;&#x2F;asny.github.io&#x2F;three-d&#x2F;&quot;&gt;examples&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;this-month-in-mun&quot;&gt;This Month in Mun&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#this-month-in-mun&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;mun-lang.org&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;mun-logo.png&quot; alt=&quot;Mun logo&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;mun-lang.org&quot;&gt;Mun&lt;&#x2F;a&gt; is a scripting language for gamedev focused on quick iteration times
+that is written in Rust.&lt;&#x2F;p&gt;
+&lt;p&gt;The Mun Team &lt;a href=&quot;https:&#x2F;&#x2F;mun-lang.org&#x2F;blog&#x2F;2020&#x2F;03&#x2F;10&#x2F;this-month-february&quot;&gt;announced&lt;&#x2F;a&gt; that they have obtained a $15k grant
+as part of the &lt;a href=&quot;https:&#x2F;&#x2F;www.mozilla.org&#x2F;en-US&#x2F;moss&#x2F;mission-partners&quot;&gt;MOSS Mission Partners&lt;&#x2F;a&gt; track, to further develop hot
+reloadable data structures.&lt;&#x2F;p&gt;
+&lt;p&gt;Their &lt;a href=&quot;https:&#x2F;&#x2F;mun-lang.org&#x2F;blog&#x2F;2020&#x2F;04&#x2F;02&#x2F;this-month-march&quot;&gt;March updates&lt;&#x2F;a&gt; include:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;marshalling of value structs;&lt;&#x2F;li&gt;
+&lt;li&gt;extern functions;&lt;&#x2F;li&gt;
+&lt;li&gt;garbage collector (defaults to mark&amp;amp;sweep);&lt;&#x2F;li&gt;
+&lt;li&gt;performance benchmarks;&lt;&#x2F;li&gt;
+&lt;li&gt;bugfixes and improved test coverage.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;oxygengine&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PsichiX&#x2F;Oxygengine&quot;&gt;Oxygengine&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#oxygengine&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;oxygengine-dark-logo.svg&quot; alt=&quot;Oxygengine logo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This month Oxygengine creator &lt;a href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;rust_gamedev&#x2F;comments&#x2F;fe57s0&#x2F;oxygengine_development_progress_tracker&#x2F;&quot;&gt;published plans&lt;&#x2F;a&gt; for the future
+of the engine, where he explains the long term goal of the project that explains
+why Oxygen is definitely not a toy or a hobby project and how that will shape
+its feature towards being a toolset for the professionals. Project progress
+tracker &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PsichiX&#x2F;Oxygengine&#x2F;projects&#x2F;1&quot;&gt;can be found here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Also, &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PsichiX&quot;&gt;@PsichiX&lt;&#x2F;a&gt; has started to work on the modular game editor
+(extendable with user-made plugins) called &lt;strong&gt;Ignite&lt;&#x2F;strong&gt;, that will ease creating
+games with the engine.&lt;&#x2F;p&gt;
+&lt;p&gt;You can look at &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;PsichiX&#x2F;status&#x2F;1243380190752813064&quot;&gt;the first editor module&lt;&#x2F;a&gt; - Asset
+Browser:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;oxygengine-asset-browser.gif&quot; alt=&quot;Oxygengine Asset Browser&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;amethyst&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;amethyst.rs&quot;&gt;Amethyst&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#amethyst&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;amethyst.rs&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;amethyst-logo.png&quot; alt=&quot;Amethyst logo&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;amethyst.rs&#x2F;posts&#x2F;release-0-15-0&quot;&gt;Ametyst 0.15.0 was released&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Better panic messages on &lt;code&gt;stable&lt;&#x2F;code&gt; Rust.&lt;&#x2F;li&gt;
+&lt;li&gt;Support for setting log levels from configuration.&lt;&#x2F;li&gt;
+&lt;li&gt;Text field rendering corrections.&lt;&#x2F;li&gt;
+&lt;li&gt;Target multiple overlapping UI entities with events.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;amethyst&#x2F;specs&quot;&gt;&lt;code&gt;specs&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; is the underlying ECS that powers Amethyst but there&#x27;s an
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;amethyst&#x2F;rfcs&#x2F;issues&#x2F;22&quot;&gt;ongoing prospect&lt;&#x2F;a&gt; of moving to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TomGillen&#x2F;legion&quot;&gt;&lt;code&gt;legion&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;.
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;csherratt&quot;&gt;@csherratt&lt;&#x2F;a&gt; wrote an &lt;a href=&quot;https:&#x2F;&#x2F;csherratt.github.io&#x2F;blog&#x2F;posts&#x2F;specs-and-legion&#x2F;&quot;&gt;excellent post&lt;&#x2F;a&gt; comparing both
+libraries. Also an &lt;a href=&quot;https:&#x2F;&#x2F;community.amethyst.rs&#x2F;t&#x2F;archetypal-vs-grouped-ecs-architectures-my-take&#x2F;1344&quot;&gt;in-depth discussion&lt;&#x2F;a&gt; about
+archetypal and grouped ECS design took place on the forum.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;specs-vs-legion.png&quot; alt=&quot;specs vs amethyst layout&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;amethyst&#x2F;atelier-assets&quot;&gt;Atelier&lt;&#x2F;a&gt; is an asset management and processing
+framework for games.
+Coupled with &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;TomGillen&#x2F;legion&quot;&gt;&lt;code&gt;legion&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;aclysma&quot;&gt;@aclysma&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;kabergstrom&quot;&gt;@kabergstrom&lt;&#x2F;a&gt; built an
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;aclysma&#x2F;atelier-legion-demo&quot;&gt;editor prototype&lt;&#x2F;a&gt; demonstrating the following
+capabilities:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Prefab loading, saving, and hot-reloading&lt;&#x2F;li&gt;
+&lt;li&gt;Entity creation &#x2F; deletion&lt;&#x2F;li&gt;
+&lt;li&gt;Component addition &#x2F; removal&lt;&#x2F;li&gt;
+&lt;li&gt;Undo and Redo&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;https:&#x2F;&#x2F;youtube.com&#x2F;watch?v=9Vwi29RuQBE&quot;&gt;demo video&lt;&#x2F;a&gt; and
+&lt;a href=&quot;https:&#x2F;&#x2F;community.amethyst.rs&#x2F;t&#x2F;atelier-legion-integration-demo&#x2F;1352&quot;&gt;forum discussion&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;There is an &lt;a href=&quot;https:&#x2F;&#x2F;community.amethyst.rs&#x2F;t&#x2F;wasm-effort&#x2F;1336&quot;&gt;ongoing effort to bring WASM support to Amethyst&lt;&#x2F;a&gt;.
+Check out the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;amethyst&#x2F;amethyst&#x2F;tree&#x2F;wasm&#x2F;docs&#x2F;CONTRIBUTING_WASM.md&quot;&gt;contribution guide&lt;&#x2F;a&gt;
+and &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;amethyst&#x2F;amethyst&#x2F;projects&#x2F;20&quot;&gt;project board&lt;&#x2F;a&gt; for current status.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ToferC&quot;&gt;@ToferC&lt;&#x2F;a&gt; reviewed their experience using Amethyst to build a space combat game,
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ToferC&#x2F;paladin&quot;&gt;Paladin&lt;&#x2F;a&gt;. Check out the
+&lt;a href=&quot;https:&#x2F;&#x2F;youtube.com&#x2F;watch?v=avW2Nr6ak-o&quot;&gt;review on youtube&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;ash-v0-30&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;MaikKlein&#x2F;ash&quot;&gt;ash&lt;&#x2F;a&gt; v0.30&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#ash-v0-30&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;code&gt;ash&lt;&#x2F;code&gt; is lightweight wrapper around Vulkan.&lt;&#x2F;p&gt;
+&lt;p&gt;The latest version comes with support for Vulkan 1.2 and following extensions:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;VK_KHR_timeline_semaphore&lt;&#x2F;li&gt;
+&lt;li&gt;VK_KHR_ray_tracing&lt;&#x2F;li&gt;
+&lt;li&gt;VK_KHR_external_memory_fd&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;rectangle-pack-v0-1-5&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;rectangle-pack-homepage&quot;&gt;Rectangle Pack&lt;&#x2F;a&gt; v0.1.5&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#rectangle-pack-v0-1-5&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;code&gt;Rectangle Pack&lt;&#x2F;code&gt; is a Rust crate focused on rectangle packing: Laying out any smaller
+number of rectangles inside any number of larger rectangles. The developer&#x27;s use
+for the library is in packing textures from texture atlases on the GPU, although
+the library does not have any concept of texture, and can be used in any
+context where rectangle packing may be needed.&lt;&#x2F;p&gt;
+&lt;p&gt;Version 0.1.5 adds implementation for error handling for RectanglePackError.&lt;&#x2F;p&gt;
+&lt;p&gt;A getting started guide is available on the &lt;a href=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;rectangle-pack-homepage&quot;&gt;project&#x27;s homepage&lt;&#x2F;a&gt;.
+Full documentation is available at the &lt;a href=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;rectangle-pack-docs&quot;&gt;rectangle-pack docs.rs section&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;popular-workgroup-issues-in-github&quot;&gt;Popular Workgroup Issues in Github&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#popular-workgroup-issues-in-github&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;!-- Up to 10 links to interesting issues --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-gamedev&#x2F;wg&quot;&gt;rust-gamedev&#x2F;wg&lt;&#x2F;a&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-gamedev&#x2F;wg&#x2F;issues&#x2F;50&quot;&gt;#50 &amp;quot;Linking Time&amp;quot;&lt;&#x2F;a&gt;;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-gamedev&#x2F;wg&#x2F;issues&#x2F;75&quot;&gt;#75 &amp;quot;Standardised API for sharing thread pools&amp;quot;&lt;&#x2F;a&gt;;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-gamedev&#x2F;wg&#x2F;issues&#x2F;91&quot;&gt;#91 &amp;quot;Should the wg volunteer to maintain winapi?&amp;quot;&lt;&#x2F;a&gt;;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-gamedev&#x2F;arewegameyet&quot;&gt;rust-gamedev&#x2F;arewegameyet&lt;&#x2F;a&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-gamedev&#x2F;arewegameyet&#x2F;issues&#x2F;289&quot;&gt;#289 &amp;quot;Netlify previews for PRs?&amp;quot;&lt;&#x2F;a&gt;;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;meeting-minutes&quot;&gt;Meeting Minutes&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#meeting-minutes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;!-- Up to 10 most important notes + a link to the full details --&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-gamedev&#x2F;wg&#x2F;issues?q=label%3Ameeting&quot;&gt;See all meeting issues&lt;&#x2F;a&gt; including full text notes
+or &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-gamedev&#x2F;wg#join-the-fun&quot;&gt;join the next meeting&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;requests-for-contribution&quot;&gt;Requests for Contribution&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#requests-for-contribution&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;!-- Links to &quot;good first issue&quot;-labels or direct links to specific tasks --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;search?q=user:EmbarkStudios+state:open&quot;&gt;Embark&#x27;s open issues&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;embark.rs&quot;&gt;embark.rs&lt;&#x2F;a&gt;);&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rust-windowing&#x2F;winit&#x2F;issues?utf8=%E2%9C%93&amp;amp;q=is%3Aissue+is%3Aopen+label%3A%22status%3A+help+wanted%22+label%3A%22Good+first+issue%22&quot;&gt;winit&#x27;s &amp;quot;Good first issue&amp;quot; and “help wanted” issues&lt;&#x2F;a&gt;;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;gfx&#x2F;issues?q=is%3Aissue+is%3Aopen+label%3Acontributor-friendly&quot;&gt;gfx-rs&#x27;s &amp;quot;contributor-friendly&amp;quot; issues&lt;&#x2F;a&gt;;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;wgpu-rs&#x2F;issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22&quot;&gt;wgpu&#x27;s &amp;quot;help wanted&amp;quot; issues&lt;&#x2F;a&gt;;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;phaazon&#x2F;luminance-rs&#x2F;issues?q=is%3Aissue+is%3Aopen+label%3A%22low+hanging+fruit%22&quot;&gt;luminance&#x27;s &amp;quot;low hanging fruit&amp;quot; issues&lt;&#x2F;a&gt;;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ggez&#x2F;ggez&#x2F;labels&#x2F;%2AGOOD%20FIRST%20ISSUE%2A&quot;&gt;ggez&#x27;s &amp;quot;good first issue&amp;quot; issues&lt;&#x2F;a&gt;;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;veloren&#x2F;veloren&#x2F;issues?label_name=beginner&quot;&gt;Veloren&#x27;s &amp;quot;beginner&amp;quot; issues&lt;&#x2F;a&gt;;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;amethyst&#x2F;amethyst&#x2F;issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22&quot;&gt;Amethyst&#x27;s &amp;quot;good first issue&amp;quot; issues&lt;&#x2F;a&gt;;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dabreegster&#x2F;abstreet&#x2F;issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22&quot;&gt;A&#x2F;B Street&#x27;s &amp;quot;good first issue&amp;quot; issues&lt;&#x2F;a&gt;;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;mun-lang&#x2F;mun&#x2F;labels&#x2F;good%20first%20issue&quot;&gt;Mun&#x27;s &amp;quot;good first issue&amp;quot; issues&lt;&#x2F;a&gt;;&lt;&#x2F;li&gt;
+&lt;li&gt;@kvark: Anybody wants to work on the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gfx-rs&#x2F;naga&#x2F;issues&#x2F;23&quot;&gt;GLSL front-end&lt;&#x2F;a&gt; in Naga?
+One day, we&#x27;ll be able to finally replace glsl-to-spirv,
+which is used by a lot of graphics applications and is prone to issues.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;bonus&quot;&gt;Bonus&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#bonus&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;!-- Bonus section to make the newsletter more interesting
+and highlight events from the past. --&gt;
+&lt;p&gt;Just an interesting Rust gamedev link from the past. :)&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;robo-logo.jpeg&quot; alt=&quot;Robo Instructus logo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;On 2019.07.16 a puzzle game &lt;a href=&quot;https:&#x2F;&#x2F;www.roboinstruct.us&quot;&gt;&amp;quot;Robo Instructus&amp;quot;&lt;&#x2F;a&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;bigabgames&quot;&gt;Alex Butler&lt;&#x2F;a&gt;
+was released after two years of development:
+&lt;a href=&quot;https:&#x2F;&#x2F;store.steampowered.com&#x2F;app&#x2F;1032170&#x2F;Robo_Instructus&quot;&gt;Steam&lt;&#x2F;a&gt;&#x2F;&lt;a href=&quot;https:&#x2F;&#x2F;bigabgames.itch.io&#x2F;robo-instructus&quot;&gt;itch.io&lt;&#x2F;a&gt; (demo is available).&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Salvage Engineer, you have a new assignment on a distant world...&lt;&#x2F;p&gt;
+&lt;p&gt;Robo Instructus is a puzzle game in which players manoeuvre a robot
+by issuing instructions via a simple programming language.
+As players progress through the game they unlock new functions
+to overcome new puzzles, each of which can be solved in multiple ways.
+The more you master the robot, the more elegant and powerful
+your solutions will be.&lt;&#x2F;p&gt;
+&lt;p&gt;Take the role of a Salvage Engineer sent across space.
+Use wits and tenacity to uncover the secrets of this isolated, frozen world.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;youtube.com&#x2F;watch?v=sIjaIxPp2_w&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-008&#x2F;robo-screenshot.jpg&quot; alt=&quot;gameplay screenshot with jumping robot&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;https:&#x2F;&#x2F;youtube.com&#x2F;watch?v=sIjaIxPp2_w&quot;&gt;release trailer&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;The game is written using gfx-rs (pre-ll), winit, and opengl.
+You can read more about its development in the &lt;a href=&quot;https:&#x2F;&#x2F;blog.roboinstruct.us&quot;&gt;&lt;strong&gt;awesome devlog&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt;
+that has lots of cool posts like
+&lt;a href=&quot;https:&#x2F;&#x2F;blog.roboinstruct.us&#x2F;2019&#x2F;06&#x2F;26&#x2F;behind-the-scenes.html&quot;&gt;&amp;quot;Robo Instructus: Behind The Scenes&amp;quot;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Discussions:
+&lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;cdw1ct&#x2F;robo_instructus_is_out_now_programming_puzzle&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;That&#x27;s all news for today, thanks for reading!&lt;&#x2F;p&gt;
+&lt;p&gt;Subscribe to &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;rust_gamedev&quot;&gt;@rust_gamedev on Twitter&lt;&#x2F;a&gt;
+or &lt;a href=&quot;https:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;rust_gamedev&quot;&gt;&#x2F;r&#x2F;rust_gamedev subreddit&lt;&#x2F;a&gt; if you want to receive fresh news!&lt;&#x2F;p&gt;
+&lt;!--
+TODO: Add real links and un-comment once this post is published
+**Discussions of this post**:
+[&#x2F;r&#x2F;rust](TODO),
+[twitter](TODO).
+--&gt;
+</description>
+            </item>
         
             <item>
                 <title>This Month in Rust GameDev #7 - February 2020</title>

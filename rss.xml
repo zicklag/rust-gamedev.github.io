@@ -546,10 +546,10 @@ changelog are:&lt;&#x2F;p&gt;
 &lt;li&gt;Limited support for stable versions of the Rust compiler&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;em&gt;Discussions: &lt;a href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;rust&#x2F;comments&#x2F;gf42ip&#x2F;kas_gui_04_release&#x2F;&quot;&gt;&#x2F;r&#x2F;rust&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
-&lt;h3 id=&quot;iced&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-010&#x2F;x&quot;&gt;Iced&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#iced&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
+&lt;h3 id=&quot;iced&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hecrj&#x2F;iced&#x2F;&quot;&gt;Iced&lt;&#x2F;a&gt;&amp;nbsp;&lt;a class=&quot;anchor&quot; href=&quot;#iced&quot; aria-hidden=&quot;true&quot;&gt;#&lt;&#x2F;a&gt;
 &lt;&#x2F;h3&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-010&#x2F;iced-life.gif&quot; alt=&quot;&amp;quot;Life&amp;quot; demo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rust-gamedev.github.io&#x2F;posts&#x2F;newsletter-010&#x2F;x&quot;&gt;Iced&lt;&#x2F;a&gt; is experimental, cross-platform GUI crate
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hecrj&#x2F;iced&#x2F;&quot;&gt;Iced&lt;&#x2F;a&gt; is experimental, cross-platform GUI crate
 focused on simplicity and type safety.
 Iced can be used natively, in a web browser, or can use wgpu,&lt;&#x2F;p&gt;
 &lt;p&gt;This month, Iced &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hecrj&#x2F;iced&#x2F;pull&#x2F;325&quot;&gt;got interactivity support for the Canvas widget&lt;&#x2F;a&gt;.

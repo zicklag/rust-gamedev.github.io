@@ -71,13 +71,14 @@ If needed, a section can be split into subsections with a "------" delimiter.
 
 ### Katharos Technology on GitHub Sponsors
 
-[Katharos Technology][ktech], a startup game and technology development studio, has gone live on [GitHub Sponsors][ghs_ktech]. Donations will go towards the development of their [Arsenal] game engine and supporting Rust gamdev libraries and tools such as [GFX], and [WGPU].
+[Katharos Technology][ktech], a startup game and technology development studio, has gone live on [GitHub Sponsors][ghs_ktech]. Donations will go towards the development of their [Arsenal] game engine and supporting Rust gamdev libraries and tools such as [GFX], and [WGPU]. They have also [published an update][arsenal_update] on their website outlining the current state and direction of the Arsenal game engine.
 
 [ktech]: https://katharostech.com
 [ghs_ktech]: https://github.com/sponsors/katharostech/
 [Arsenal]: https://github.com/katharostech/arsenal
 [GFX]: https://github.com/gfx-rs/gfx
 [WGPU]: https://github.com/gfx-rs/wgpu
+[arsenal_update]: https://katharostech.com/post/arsenal-development-now-on-github-sponsors
 
 ## Popular Workgroup Issues in Github
 
